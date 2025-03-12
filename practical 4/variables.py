@@ -6,6 +6,10 @@ e=5
 f=d+e
 if c < f:
     print("walk+bus is faster, full time is:", c,"minutes")
+elif c==f:
+    print("the two ways are same,full time is:",c,"minutes")
+else:
+    print("bike+bus is faster, full time is:",f,"minutes")
 x=True
 y=False
 w=x and y
