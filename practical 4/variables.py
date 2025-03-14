@@ -12,11 +12,11 @@ e=5
 f=d+e
 # Compare the total time of these two ways to identify which is faster
 if c < f:
-    print("walk+bus is faster, full time is:", c,"minutes")
+    print("bus is faster, full time is:", c,"minutes")
 elif c==f:
     print("the two ways are same,full time is:",c,"minutes")
 else:
-    print("bike+bus is faster, full time is:",f,"minutes")
+    print("car is faster, full time is:",f,"minutes")
 # Define x as True and y as False
 x=True
 y=False
