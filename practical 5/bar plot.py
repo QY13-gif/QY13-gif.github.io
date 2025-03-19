@@ -17,4 +17,4 @@ plt.show()
 #Identify the language to query
 language_to_query="Python"
 #Show the conclusion
-print(f"The percentage of developers using {language_to_query} is {Language_popularity[language_to_query]}%")
+print("The percentage of developers using",language_to_query,"is",Language_popularity[language_to_query],"%")
