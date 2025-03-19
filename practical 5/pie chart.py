@@ -13,14 +13,15 @@ import matplotlib.pyplot as plt
 #Provide with data
 labels_uk=['England','Scotland','Wales','North Ireland']
 labels_china=['Zhejiang','Fujian','Jiangxi','Anhui','Jiangsu']
-colors=['gold','yellowgreen','lightcoral','lightskyblue']
+colorsA=['gold','yellowgreen','lightcoral','lightskyblue']
+colorsB=['pink','purple','green','blue','red']
 #Make two subplots
 plt.subplot(1,2,1)
-plt.pie(uk_countries, labels=labels_uk, autopct='%1.1f%%',colors=colors,explode=(0.1,0,0,0))
+plt.pie(uk_countries, labels=labels_uk, autopct='%1.1f%%',colors=colorsA,explode=(0.1,0,0,0))
 plt.title('Population Distribution in UK Province')
 
 plt.subplot(1,2,2)
-plt.pie(china_provinces,labels=labels_china, autopct='%1.1f%%',colors=colors,explode=(0.1,0,0,0,0))
+plt.pie(china_provinces,labels=labels_china, autopct='%1.1f%%',colors=colorsB,explode=(0.1,0,0,0,0))
 plt.title('Popolation Distribution in Zhejiang neighbouring Provinces')
 
 #Show the plots
