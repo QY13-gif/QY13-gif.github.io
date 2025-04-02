@@ -3,7 +3,7 @@ def extract_gene_name(header):
     match=re.search(r'gene:(\S+)',header)
     return match.group(1) if match else header.spilt()[0]
 def has_tata_box(sequence):
-    return re.search(r'TATAAA|TATATA|TATATAA',sequence) is not None
+    return re.search(r'TATAAA|TATATAT|TATAAAT|TATATAA',sequence) is not None
 def process_fasta(input_file, output_file):
     with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
         current_seq = []
@@ -14,7 +14,13 @@ def process_fasta(input_file, output_file):
                     full_seq =''.join(current_seq)
                     if has_tata_box(full_seq):
                         gene_name=extract_gene_name(current_header)
-                        outfile.write(f'>{gene_name}\n{full_seq}\n')
+                        outfile.write(f'>{gene_name}\n') 
+                        line_length=60
+                        for i in range(0, len(full_seq), line_length):
+                            outfile.write(full_seq[i:i + line_length] + '\n')
+
+
+
                 current_header=line.strip()
                 current_seq=[]
             else:
@@ -23,9 +29,17 @@ def process_fasta(input_file, output_file):
             full_seq = ''.join(current_seq)
             if has_tata_box(full_seq):
                 gene_name = extract_gene_name(current_header)
-                outfile.write(f'>{gene_name}\n{full_seq}\n')
+                outfile.write(f'>{gene_name}\n')
+                line_length=60
+                for i in range(0, len(full_seq), line_length):
+                    outfile.write(full_seq[i:i + line_length] + '\n')
+
+
+
+
 input_fasta =r'C:\Users\cqy111\Downloads\Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa'
 output_fasta ='tata_genes.fa'
 output_fasta = r'C:\Users\cqy111\Desktop\tata_genes.fa'
+
 process_fasta(input_fasta,output_fasta)
 
