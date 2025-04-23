@@ -1,2 +1,4 @@
 How has the DALYs changed in one or more countries over time?
 From row 49 to row 72 in ".py"
+Discussion: the conclusion is baiscally in line with my expextions
+            the plot is clear enough 
