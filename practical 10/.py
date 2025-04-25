@@ -21,7 +21,7 @@ print(dalys_data.info())
 #Show some typical data in this file
 print(dalys_data.describe())
 #Show the first 10 rows and the third column data
-years = dalys_data.iloc[0:10, 2]  
+years = dalys_data.iloc[0:9, 2]  
 print(years)
 
 
@@ -63,6 +63,8 @@ axes[0].plot(uk_data["Year"], uk_data["DALYs"], 'b-', label="UK")
 axes[0].set_title("DALYs in the United Kingdom")
 axes[0].set_xlabel("Year")
 axes[0].set_ylabel("DALYs")
+axes[0].set_xticks(uk_data.Year)
+axes[0].set_xticklabels(uk_data.Year,rotation=-90)
 axes[0].legend()
 
 #Make the lower one
@@ -70,6 +72,8 @@ axes[1].plot(france_data["Year"], france_data["DALYs"], 'r-', label="France")
 axes[1].set_title("DALYs in France")
 axes[1].set_xlabel("Year")
 axes[1].set_ylabel("DALYs")
+axes[1].set_xticks(france_data.Year)
+axes[1].set_xticklabels(france_data.Year,rotation=-90)
 axes[1].legend()
 
 #Ensure the suitable distribution and show the plot
