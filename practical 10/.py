@@ -61,6 +61,7 @@ fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(10, 8))
 #Make the upper one
 axes[0].plot(uk_data["Year"], uk_data["DALYs"], 'b-', label="UK")
 axes[0].set_title("DALYs in the United Kingdom")
+axes[0].set_xlabel("Year")
 axes[0].set_ylabel("DALYs")
 axes[0].legend()
 
