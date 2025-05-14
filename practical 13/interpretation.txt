@@ -1,0 +1,6 @@
+SOD2 HUMAN: length: 222 AAs    subcellular localisation : mitochondrion matrix
+range of percentage identities: 83.3% - 100%
+human-mouse: score=1097, identity=90.09009009009009%
+human-random: socre=-245, identity=5.405405405405405%
+mouse-random: score=-245, identity=5.8558558558558556%
+the human sod2 and the mouse sod2 are most closely related
