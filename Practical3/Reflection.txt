@@ -1,1 +1,3 @@
-happy
+I have met some difficulties, but with classmates' help and support from teachers, I finally finshed it.
+I think writing code is actually an interesting process.
+But I'm still not so familiar with the vscode as well as the github, needing more peactice.
