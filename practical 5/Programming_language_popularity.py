@@ -1,5 +1,6 @@
 #Make the dictionary
 Language_popularity = {"JavaScript": 62.3, "HTML": 52.9, "Python": 51, "SQL": 51, "TypeScript": 38.5}
+print(Language_popularity)
 #Import models
 import numpy as np
 import matplotlib.pyplot as plt

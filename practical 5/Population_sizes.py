@@ -22,7 +22,7 @@ plt.title('Population Distribution in UK Province')
 
 plt.subplot(1,2,2)
 plt.pie(china_provinces,labels=labels_china, autopct='%1.1f%%',colors=colorsB,explode=(0.1,0,0,0,0))
-plt.title('Popolation Distribution in Zhejiang neighbouring Provinces')
+plt.title('Population Distribution in Zhejiang neighbouring Provinces')
 
 #Show the plots
 plt.show()
