@@ -28,5 +28,6 @@ print("the value of w is",w)
 |x    |y      |w(x and y)     |x or y    |
 |True |True   |True           |True      |
 |True |False  |False          |True      |
+|False|True   |False          |True      |
 |False|False  |False          |False     |'
 '''

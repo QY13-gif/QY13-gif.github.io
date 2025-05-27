@@ -1,6 +1,5 @@
 # What does this piece of code do?
-# Answer:The times the computer selected a number.
-
+# Answer:It simulated the process of rolling 2 dice until two identical numbers appeared, and recorded the number of times the die needed to be rolled.
 # Import libraries
 # randint allows drawing a random number,
 # e.g. randint(1,5) draws a number between 1 and 5
